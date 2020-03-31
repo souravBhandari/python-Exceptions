@@ -1,0 +1,12 @@
+try:
+ lst=[]
+ a=int(input("enter a no"))
+ lst[0]=a
+except ValueError:
+ print("incorrect value entered ")
+ a=int(input("enter a no"))
+ lst.append(a)
+except IndexError:
+ print("incoorect index ,switching to append method")
+ lst.append(a)
+print(lst)
